@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+ margin: 0px; padding: 0px;
+ font-family: 'Poppins', sans-serif;
+}
+button{
+ margin: 4px; padding: 6px 8px;
+}
+
+/* HEADER*/
+
+/* COLORES
+-amarillo: #FFD300;
+-beige: #F2F2F2;
+-gris oscuro:#282828;
+*/
+
+.header{
+  padding: 20px;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+/* SECCION DE BUSQUEDA*/
+
+.seccion_busqueda{
+  background-color: #282828;
+  padding: 10px;
+}
+.buscador{
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.menu{
+  margin-left: auto; margin-right: auto; width:470px;
+}
+.menuHorizontal{
+  display: flex;
+}
+
+.NO-seleccionado{
+  color: white;
+  font-weight: 300;
+   border: 1px solid white;
+  border-radius: 5px;
+  background-color:#282828 ;
+}
+.SI-seleccionado{
+  color: black;
+  font-weight: 300;
+   border: 1px solid #FFD300;
+  border-radius: 5px;
+  background-color:#FFD300;
+}
+
+/* ARTICULOS*/
+.cuerpo{
+ margin: 32px 0px; padding-left: 15%; padding-right: 15%; width: 70%;
+}
+
+.artTODOS , .artNOTAS , .artFOTO , .artBLOG , .artCURIOSIDADES{
+margin: 24px 0px;
+display: flex;
+}
+
+
+
+
+
+/* comps int */
+.art_IMG{
+}
+.art_TITLE{
+  padding: 0px 8px;
+  font-size: 24px;
+}
+.art_CLASE{
+  font-size: 18px;
+  color:#FFD300;
+  border-right-style: 2px solid #FFD300;
+  border-left-style: 2px solid #FFD300;
+}
