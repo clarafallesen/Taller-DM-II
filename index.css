@@ -6,7 +6,7 @@ body{
 }
 button{
  margin: 4px;
- padding: 8px 32px;
+ padding: 8px 40px;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
@@ -38,11 +38,11 @@ button{
 }
 
 .menu{
-  margin-left: auto; margin-right: auto; width:55%;
+  margin-left: auto; margin-right: auto; width:60%;
 }
 .menuHorizontal{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .NO-seleccionado{
@@ -59,13 +59,18 @@ button{
   border-radius: 10px;
   background-color:#FFD300;
 }
+#botonTODOS , #botonNOTAS , #botonFOTO , #botonBLOG , #botonCURIOSIDADES , #botonLECTOR:hover {
+
+cursor: pointer;
+
+}
 
 /* ARTICULOS*/
 .cuerpo{
- margin: 32px 0px; padding-left: 15%; padding-right: 15%; width: 70%;
+ margin: 32px 0px; padding-left: 20%; padding-right: 20%; width: 60%;
 }
 
-.artTODOS , #NOTAS , .artFOTO , .artBLOG , .artCURIOSIDADES{
+.artLECTOR , #NOTAS , .artFOTO , .artBLOG , .artCURIOSIDADES{
 margin: 24px 0px;
 display: flex;
 }
@@ -79,12 +84,14 @@ display: flex;
   margin: 40px auto ;
 }
 .textos{
+  width: 70%;
   padding: 0px 16px;
 }
 .art_IMG{
   width: 30%;
 }
 .art_TITLE{
+  width: 100%;
   font-size: 24px;
   margin: 0px;
   text-decoration: none;

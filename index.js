@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $("#botonTODOS").click(function() { /*Boton scrolldown*/
 
-    $(".artTODOS").show();
+    $(".artLECTOR").show();
     $(".artNOTAS").show();
     $(".artFOTO").show();
     $(".artBLOG").show();
@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 
   $("#botonNOTAS").click(function() { /*Boton scrolldown*/
-    $(".artTODOS").hide();
+    $(".artLECTOR").hide();
     $(".artFOTO").hide();
     $(".artBLOG").hide();
     $(".artCURIOSIDADES").hide();
@@ -19,7 +19,7 @@ $(document).ready(function(){
   });
 
   $("#botonFOTO").click(function() { /*Boton scrolldown*/
-    $(".artTODOS").hide();
+    $(".artLECTOR").hide();
     $(".artNOTAS").hide();
     $(".artBLOG").hide();
     $(".artCURIOSIDADES").hide();
@@ -28,21 +28,44 @@ $(document).ready(function(){
   });
 
   $("#botonBLOG").click(function() { /*Boton scrolldown*/
-    $(".artTODOS").hide();
+    $(".artLECTOR").hide();
     $(".artNOTAS").hide();
     $(".artFOTO").hide();
     $(".artCURIOSIDADES").hide();
 
     $(".artBLOG").show();
+
+    $("#botonBLOG").removeClass("NO-seleccionado");
+    $("#botonBLOG").addClass("SI-seleccionado");
+
+    $("#botonFOTO").removeClass("SI-seleccionado");
+    $("#botonCURIOSIDADES").removeClass("SI-seleccionado");
+    $("#botonNOTAS").removeClass("SI-seleccionado");
+    $("#botonLECTOR").removeClass("SI-seleccionado");
+
+    $("#botonFOTO").addClass("NO-seleccionado");
+    $("#botonCURIOSIDADES").addClass("NO-seleccionado");
+    $("#botonNOTAS").addClass("NO-seleccionado");
+    $("#botonLECTOR").addClass("NO-seleccionado");
+
   });
 
   $("#botonCURIOSIDADES").click(function() { /*Boton scrolldown*/
-    $(".artTODOS").hide();
+    $(".artLECTOR").hide();
     $(".artNOTAS").hide();
     $(".artFOTO").hide();
     $(".artBLOG").hide();
 
     $(".artCURIOSIDADES").show();
+  });
+
+  $("#botonLECTOR").click(function() { /*Boton scrolldown*/
+    $(".artCURIOSIDADES").hide();
+    $(".artNOTAS").hide();
+    $(".artFOTO").hide();
+    $(".artBLOG").hide();
+
+    $(".artLECTOR").show();
   });
 
 });
