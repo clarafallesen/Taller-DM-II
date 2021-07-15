@@ -25,6 +25,29 @@ button{
   background-color: #F2F2F2;
 }
 
+.footer{
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+.linksFooter{
+  margin: 0px; padding-left: 15%; padding-right: 15%;
+  display: flex; justify-content: space-between;
+
+  color: white; font-weight: bold;
+  font-size: 15px;
+}
+
+.linksdelfooter{
+  color: white;
+  text-decoration: none;
+}
+
+.LogoIMG{
+  width: 12%;
+}
+
 /* SECCION DE BUSQUEDA*/
 
 .seccion_busqueda{
