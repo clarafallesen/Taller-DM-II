@@ -10,7 +10,6 @@ button{
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
-
 /* HEADER*/
 
 /* COLORES
@@ -52,11 +51,12 @@ button{
 
 .seccion_busqueda{
   background-color: #282828;
-  padding: 10px;
+  padding: 16px 20%;
 }
 
 .menu{
-  margin-left: auto; margin-right: auto; width:60%;
+  padding: 4px 20%; width:60%;
+  background-color: #282828;
 }
 .menuHorizontal{
   display: flex;
@@ -78,9 +78,11 @@ button{
   background-color:#FFD300;
 }
 #botonTODOS , #botonNOTAS , #botonFOTO , #botonBLOG , #botonCURIOSIDADES , #botonLECTOR:hover {
-
 cursor: pointer;
-
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 /* ARTICULOS*/

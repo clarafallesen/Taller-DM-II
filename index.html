@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <script src="JQuary.min.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <script src="js/JQuary.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/buscador.css">
 </head>
 <body>
 
@@ -12,42 +14,64 @@
     <img src="img/ng-logo.png" alt="LOGO">
   </div>
 
-<div class="seccion_busqueda">
+  <header>
+    <div class="seccion_busqueda">
+      <input type="search" id="input-search" placeholder="Buscar aqui">
+      <div class="content-search">
+        <div class="content-table">
+          <table id="table">
+            <thead>
+              <tr>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="index.html">Arboles del amazonas</a></td>
+              </tr>
 
-  <div class="buscador2.0">
-  <div id="ctn-icon-search">
-      <i class="fas fa-search" id="icon-search"><img src="img/buscar1.png" alt="" id="icon-search" ></i>
-  </div>
+              <tr>
+                <td><a href="index.html">Especies de arboles selvaticos</a></td>
+              </tr>
 
-  <div id="ctn-bars-search">
-  <input type="text" id="inputSearch" placeholder="¿Qué quieres aprender hoy?">
-  </div>
+              <tr>
+                <td><a href="index.html">Árboles frutales</a></td>
+              </tr>
 
-  <ul  id="box-search">
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles del amazonas </a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles selvaticos</a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles frutales </a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles frondosos</a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles de navidad </a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Árboles antiguos</a> </li>
-    <li> <a href="#"><i>class="fas fa-search"</i>Especies de árboles</a> </li>
-  </ul>
+              <tr>
+                <td><a href="index.html">Arboles frondosos</a></td>
+              </tr>
 
-  <div id="cover-ctn-search"></div>
+              <tr>
+                <td><a href="index.html">Los mejores Arboles de navidad</a></td>
+              </tr>
 
-</div>
+              <tr>
+                <td><a href="index.html">Arboles muy antiguos</a></td>
+              </tr>
 
-    <div class="menu">
-      <div class="menuHorizontal">
-        <button class="SI-seleccionado" id="botonTODOS" type="button" name="botonTODOS">Todos</button>
-        <button class="NO-seleccionado" id="botonNOTAS" type="button" name="botonNOTAS">Notas</button>
-        <button class="NO-seleccionado" id="botonFOTO" type="button" name="botonFOTO">Fotografías</button>
-        <button class="NO-seleccionado" id="botonBLOG" type="button" name="botonBLOG">Blog</button>
-        <button class="NO-seleccionado" id="botonCURIOSIDADES" type="button" name="botonCURIOSIDADES">Curiosidades</button>
-        <button class="NO-seleccionado" id="botonLECTOR" type="button" name="botonLECTOR">Foto del lector</button>
+              <tr>
+                <td><a href="index.html">Especies de arboles</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-</div>
+
+      <div class="menu">
+        <div class="menuHorizontal">
+          <button class="SI-seleccionado" id="botonTODOS" type="button" name="botonTODOS">Todos</button>
+          <button class="NO-seleccionado" id="botonNOTAS" type="button" name="botonNOTAS">Notas</button>
+          <button class="NO-seleccionado" id="botonFOTO" type="button" name="botonFOTO">Fotografías</button>
+          <button class="NO-seleccionado" id="botonBLOG" type="button" name="botonBLOG">Blog</button>
+          <button class="NO-seleccionado" id="botonCURIOSIDADES" type="button" name="botonCURIOSIDADES">Curiosidades</button>
+          <button class="NO-seleccionado" id="botonLECTOR" type="button" name="botonLECTOR">Foto del lector</button>
+        </div>
+      </div>
+
+  </header>
+
 
   <div class="cuerpo">
     <div id="NOTAS" class="artCURIOSIDADES">
@@ -242,20 +266,23 @@
 
   <div class="footer">
     <img class="LogoIMG" src="img/ng-logo2.png" alt="LOGO">
-      <div class="linksFooter">
-        <a class="linksdelfooter" href="https://bases.editorialtelevisa.com.mx/national-geographic/?_ga=2.178825892.1203345456.1626298257-1590019480.1624921461#aviso"> <p>AVISO DE PRIVACIDAD</p> </a>
-        <a class="linksdelfooter" href="https://www.caras.com.mx/"> <p>CARAS</p> </a>
-        <a class="linksdelfooter" href="https://www.cocinafacil.com.mx/"> <p>COCINA FÁCIL</p> </a>
-        <a class="linksdelfooter" href="https://www.vanidades.com/"> <p>VANIDADES</p> </a>
-        <a class="linksdelfooter" href="https://www.tuenlinea.com/"> <p>TU</p> </a>
-        <a class="linksdelfooter" href="https://www.muyinteresante.com.mx/"> <p>MUY INTERESANTE</p> </a>
-        <a class="linksdelfooter" href="https://www.cosmopolitan.com.mx/"> <p>COSMOPOLITAN</p> </a>
-        <a class="linksdelfooter" href="https://www.esquirelat.com/"> <p>ESQUIRE</p> </a>
-        <a class="linksdelfooter" href="https://www.harpersbazaar.mx/?_ga=2.183077670.1203345456.1626298257-1590019480.1624921461"> <p>HARPER’S BAZAAR</p> </a>
-      </div>
+    <div class="linksFooter">
+      <a class="linksdelfooter" href="https://bases.editorialtelevisa.com.mx/national-geographic/?_ga=2.178825892.1203345456.1626298257-1590019480.1624921461#aviso"> <p>AVISO DE PRIVACIDAD</p> </a>
+      <a class="linksdelfooter" href="https://www.caras.com.mx/"> <p>CARAS</p> </a>
+      <a class="linksdelfooter" href="https://www.cocinafacil.com.mx/"> <p>COCINA FÁCIL</p> </a>
+      <a class="linksdelfooter" href="https://www.vanidades.com/"> <p>VANIDADES</p> </a>
+      <a class="linksdelfooter" href="https://www.tuenlinea.com/"> <p>TU</p> </a>
+      <a class="linksdelfooter" href="https://www.muyinteresante.com.mx/"> <p>MUY INTERESANTE</p> </a>
+      <a class="linksdelfooter" href="https://www.cosmopolitan.com.mx/"> <p>COSMOPOLITAN</p> </a>
+      <a class="linksdelfooter" href="https://www.esquirelat.com/"> <p>ESQUIRE</p> </a>
+      <a class="linksdelfooter" href="https://www.harpersbazaar.mx/?_ga=2.183077670.1203345456.1626298257-1590019480.1624921461"> <p>HARPER’S BAZAAR</p> </a>
+    </div>
     <p style="color: gray; font-weight: bold; padding: 0px; margin: 0px 0px 28px 0px; font-size: 15px;" >EDITORIAL TELEVISA S.A. DE C.V. TODOS LOS DERECHOS RESERVADOS. TBG - EDITORIAL TELEVISA - NEWS/INFORMATION - GENERAL NEWS</p>
   </div>
 
-  <script src="index.js"></script>
+
+
+  <script src="js/buscador.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
